@@ -1,0 +1,189 @@
+.coachesDetail{
+    background: #111 !important;
+}
+
+#egitmendetay{
+    width: 100%;
+}
+
+
+.swiper-slide{
+    background-color:#111;
+    position: relative;
+    img{
+        position: absolute;
+        top: 10%;
+        left:50%;
+        -webkit-transform: translate(-50%, 0%);
+                transform: translate(-50%, 0%);
+        width: 500px;
+    }
+    .name{
+        position: absolute;
+        top: 35%;
+        left: 10%;
+        width: 20%;
+        -webkit-transform: translate(-10%, 0%);
+                transform: translate(-10%, 0%);
+        display: block;
+        color: #fff;
+        font-family: 'USAAF', sans-serif;
+        font-size: 5.5rem;
+    }
+    .skill{
+        position: absolute;
+        top: 45%;
+        right: 5%;
+        width: 20%;
+        -webkit-transform: translate(-10%, 0%);
+                transform: translate(-10%, 0%);
+        display: block;
+        text-align: center;
+
+        span{
+            position: relative;
+            display: block;
+            #spor-icons{
+                position: relative;
+                display: block;
+                width: 50px;
+                margin: 0 10px;
+                padding: 10px;
+                float: left;
+                    &:after, &:before{
+                        clear: both;
+                    }
+                img{
+                    position: relative; 
+                    display: block;
+                    width: 100%;
+                    -webkit-box-shadow: 0 0 1px #fff;
+                            box-shadow: 0 0 1px #fff;
+                    border-radius: 50%;
+                    padding: 10px;
+
+                }
+                                   
+                    &:before{
+                        content: attr(sportname);
+                        font-size: 16px;
+                        position: absolute;
+                        color: #fff;
+                        bottom: -25px;
+                        left: 0;
+                        width: 100%;
+                        text-align: center;
+                        font-family: 'USAAF', sans-serif;
+                    }
+            }
+            
+        }
+    } 
+}
+.swiper-button-next{
+    top: 26px !important;
+    right: 25px !important;
+}
+.swiper-button-prev{
+    right: 70px !important;
+    top: 26px !important;
+    left: auto !important
+}
+
+.gridtext2{
+    position: absolute;
+    z-index: 9;
+    top: 39px;
+    right: 162px;
+    font-family: 'USAAF', sans-serif;
+    color: #fff;
+    -webkit-transition: .1s all ease;
+    transition: .1s all ease;
+    
+}
+.grid2{ 
+            &:hover ~ .gridtext2{
+                opacity: 1;
+                visibility: visible;
+            }
+            &:hover>  #m1{
+                    top: -2.5px;
+                    left:-2.5px;
+                }
+                &:hover>  #m2{
+                    top: -2.5px;
+                }
+                &:hover>  #m3{
+                    top: -2.5px;
+                    left: 17.5px;
+                }
+                &:hover>  #m4{
+                    left: -2.5px;
+                }
+                &:hover>  #m6{
+                    left: 17.5px;
+                }
+                &:hover>  #m7{
+                    top: 17.5px;
+                    left: -2.5px;
+                }
+                  &:hover>  #m8{
+                    top: 17.5px;
+                }
+                  &:hover>  #m9{
+                    top: 17.5px;
+                    left: 17.5px;
+                }
+                    width: 25px;
+                    height: 25px;
+                    display: inline-block;
+                    margin-bottom: -8px;
+                    z-index: 9;
+                    position: absolute;
+                    top: 36px;
+                    right: 132px;
+                    span{
+                        position: absolute;
+                        width: 5px;
+                        height: 5px;
+                        background: #fff;
+                        -webkit-transition:.15s all ease;
+                        transition:.15s all ease;
+                    } 
+                    #m1{
+                       top:0;
+                       left:0; 
+                    }
+                    #m2{
+                        top:0px;
+                        left: 7.5px;
+                    }
+                    #m3{
+                        top:0;
+                        left:15.5px;
+                    }
+                    #m4{
+                        top: 7.5px;
+                        left:0;
+                    }
+                    #m5{
+                        top:7.5px;
+                        left:7.5px;
+                    }
+                    #m6{
+                        top:7.5px;
+                        left:15.5px;
+                    }
+                    #m7{
+                        top:15.5px;
+                        left: 0;
+                    }
+                    #m8{
+                        top:15.5px;
+                        left:7.5px;
+                    }
+                    #m9{
+                        top:15.5px;
+                        left:15.5px;
+                    }
+                }

@@ -1,0 +1,164 @@
+header{
+    z-index: 99;
+    display: block;
+    position: relative;
+    nav{
+        padding: 10px;
+        #burger{
+            float:left;
+            position: fixed;
+            i{
+                padding: 10px;
+                font-size:3rem;
+                color:#f4f4f4;
+                font-weight: 100;
+            }
+            &:after, &:before{
+                clear: both;
+            }
+        }
+        h1{
+            position: fixed;
+            left:50%;
+            -webkit-transform: translateX(-50%);
+                    transform: translateX(-50%);
+            font-size: 2.3rem;
+            font-weight: 900;
+            margin: 0;
+            padding: 10px;
+            font-family: 'Titillium Web', sans-serif;
+            color: #fdfdfd;
+            letter-spacing: 1px;
+        }
+    }
+    .topmenu{
+        $menuheight : 250px;
+        position: fixed;
+        top: -$menuheight - 100;
+        left:0;
+        width: 100%;
+        height: $menuheight;
+        background: #252322;
+        display: block;
+        z-index: 10;
+        -webkit-transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) all .2s;
+        transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) all .2s;
+        .top{
+            position: relative;
+            width: 100%;
+            height: 50px;
+            border-bottom: 1px solid #2a292a;
+            .socials{
+                position: absolute;
+                top: 0;
+                padding: 17px 0;
+                right:50px;
+                font-family: 'Titillium Web', sans-serif;
+                span{
+                    padding: 0px 10px;
+                    border-right: 1px solid darken(#524d4d,10%);
+                    &:last-child{
+                        border-right: 0px solid transparent;
+                    }
+                    a{
+                        -webkit-transition: .2s all linear;
+                        transition: .2s all linear;
+                        text-decoration: none;
+                        font-size: .8rem;
+                        color: #7a7575;
+                        font-weight: 700;
+                    }
+                    &:hover > a {
+                        color: #fdfdfd;
+                    }
+                }
+            } 
+            #close{
+                position: absolute;
+                top:0px;
+                left:50px;
+                cursor: pointer;
+                -webkit-transition: .2s all linear;
+                transition: .2s all linear;
+                color: #7a7575;
+                &:hover{
+                    color:#fdfdfd !important;
+                }
+                i{
+                    font-size:3.8rem;
+                    //color:#524d4d;
+                }
+                &:after{
+                    content: 'KAPAT';
+                    font-family: 'Titillium Web', sans-serif;
+                    //color: #524d4d;
+                    font-size: 1.4rem;
+                    position: absolute;
+                    left: 30px;
+                    top: 17px;
+                }
+            }
+        }
+        .bottom{
+            position: relative;
+            width: 100%;
+            height: 100px;
+            ul{
+                width: 100%;
+                display: block;
+                li{
+                    position: relative;
+                    cursor: pointer;
+                    float: left;
+                    padding: 20px 0;
+                    text-align: center;
+                    width: 24.90%;
+                    border-right:1px solid #2a292a;
+                    &:last-child{
+                        border-right: 0px solid transparent;
+                    }
+                    a{
+                        &:hover > svg{
+                            stroke-dashoffset: 3;
+                        }
+                        &:hover > span{
+                            color:#fdfdfd;
+                        }
+                        svg{
+                            display: inline-block;
+                            width: 40%;
+                            -webkit-transition: 1s all linear;
+                            transition: 1s all linear;
+                            fill: none;
+                            stroke: white;
+                            stroke-width: 1;
+                            stroke-dasharray: 800;
+                            stroke-dashoffset: -800;
+                            padding: 20px 0;
+                        }
+                        span{
+                            position: absolute;
+                            bottom:0;
+                            left: 50%;
+                            -webkit-transform: translateX(-50%);
+                                    transform: translateX(-50%);
+                            color: #7a7575;
+                            font-family: 'Titillium Web', sans-serif;
+                            font-weight: 700;
+                            font-size: 1.4rem;
+                            -webkit-transition: .5s all linear;
+                            transition: .5s all linear;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    .menuactive{
+        z-index: 5;
+        top: 0 !important;
+    }
+
+
+}

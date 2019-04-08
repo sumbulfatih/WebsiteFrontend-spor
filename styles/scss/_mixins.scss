@@ -1,0 +1,17 @@
+
+
+@mixin prefixer($property, $value) {
+        #{$property}: $value;
+        -webkit-#{$property}: $value;
+        -moz-#{$property}: $value;
+        -ms-#{$property}: $value;
+        -o-#{$property}: $value;
+}
+
+
+@mixin centerer{
+    position: absolute;
+    top:50%; 
+    left:50%;
+    @include prefixer(transform, translate(-50%,-50%));
+}

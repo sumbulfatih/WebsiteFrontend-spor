@@ -1,0 +1,161 @@
+.coaches{
+    overflow: scroll;
+    background: #252322 !important;
+}
+#egitmenHeader{
+            position: fixed;
+            top: 30%;
+            left:50%;
+            -webkit-transform: translate(-50%, -30%);
+                    transform: translate(-50%, -30%);
+            font-size: 6.8rem;
+            color: #fff;
+            // opacity: .75;
+            font-family: 'USAAF', sans-serif;
+            font-weight: 400;
+}
+#egitmenP{
+          position: fixed;
+            top: 75%;
+            left:50%;
+            -webkit-transform: translate(-50%, -75%);
+                    transform: translate(-50%, -75%);
+            font-size: 1.4rem;
+            color: #fff;
+            opacity: .7;
+            letter-spacing: 1.2;
+            font-family: 'CaptureIt', sans-serif;
+            font-weight: 400;
+            text-align: center;
+            p{
+                -webkit-transition: .1s all linear;
+                transition: .1s all linear;
+            }
+            p:last-child{
+                font-size: 2.5rem;
+                -webkit-animation: .5s hocalarArrow infinite;
+                        animation: .5s hocalarArrow infinite;
+                &:hover{
+                    -webkit-transform: translateY(15px);
+                            transform: translateY(15px)
+                }
+                
+            }
+            @-webkit-keyframes hocalarArrow{
+                0%  {    -webkit-transform: translateY(0px);    transform: translateY(0px)}
+                50% {    -webkit-transform: translateY(15px);    transform: translateY(15px)}
+                100%{    -webkit-transform: translateY(0px);    transform: translateY(0px)}
+            }
+            @keyframes hocalarArrow{
+                0%  {    -webkit-transform: translateY(0px);    transform: translateY(0px)}
+                50% {    -webkit-transform: translateY(15px);    transform: translateY(15px)}
+                100%{    -webkit-transform: translateY(0px);    transform: translateY(0px)}
+            }
+}
+.upper{
+}
+#coachList{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+    width: 90%;
+    max-width: 90%;
+    // background: #070707;
+    background: #252322;
+    .spordetay{
+        width: 85%;
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        h2{
+            margin-top: 50px;
+            font-size: 30px;
+            color: #fff;
+             font-family: 'Titillium Web', sans-serif;
+             font-weight: 600;
+             margin-bottom: 30px;
+        }
+        b{
+                color: #b2b2b2;
+                font-family: 'Titillium Web', sans-serif;
+                font-size: 18px;
+                line-height: 28px;
+        }
+    }
+    p{
+        color: #b2b2b2;
+        padding: 100px 0 50px;
+        width: 80%;
+        margin: 0 auto;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    section{
+        position: relative;
+        width: 100%;
+        ul{
+            width: 100%;
+            display: block;
+            overflow:hidden;
+            li{
+                position: relative;
+                float: left;
+                width: 25%; 
+                -webkit-box-shadow: 0 0 .5px #252525; 
+                        box-shadow: 0 0 .5px #252525;
+                overflow: hidden;
+                a{
+                    img{
+                        width: 100%;
+                        -webkit-transition: .1s all ease;
+                        transition: .1s all ease;
+                    }
+                    span{
+                        position: absolute;
+                        color: #fff;
+                        opacity: .6;
+                        font-family: 'CaptureIt', sans-serif;
+                        bottom: 20px;
+                        left:15px;
+                        font-size: 1.3rem;
+                        display: block;
+                        z-index: 2;
+                        -webkit-transition: .1s all ease;
+                        transition: .1s all ease;
+                        text-transform: uppercase;
+                    }
+                    .skills{
+                        position: absolute;
+                        width: 110%;
+                        height: 110px;
+                        display: block;
+                        -webkit-transform: rotate(15deg);
+                                transform: rotate(15deg);
+                        background: #ffb100;
+                        left: -10%;
+                        bottom: -100%;
+                        z-index: 1;
+                        -webkit-transition: .1s all ease;
+                        transition: .1s all ease;
+                    }
+
+                }
+                 &:hover > a > .skills{
+                    bottom: -12%;
+                }
+                &:hover > a > span{
+                    font-size: 1.45rem;
+                    opacity: 1;
+                    color: #222;
+                }
+                &:hover > a >img{
+                    -webkit-transform: translateY(-5px);
+                            transform: translateY(-5px);
+                }
+            }
+        }
+    }
+}
